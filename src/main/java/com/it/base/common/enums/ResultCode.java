@@ -17,7 +17,7 @@ public enum ResultCode {
 
     VALIDATE_FAILED(402, "参数校验失败"),
 
-    ERROR(500, "未知错误");
+    ERROR(500, "系统异常");
 
     private int code;
     private String msg;

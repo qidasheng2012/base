@@ -1,6 +1,6 @@
 package com.it.base.common.exception;
 
-import com.it.base.common.enums.ResultCode;
+import com.it.base.common.enums.ResultCodeEnum;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,11 +12,11 @@ import lombok.Getter;
 @AllArgsConstructor(access = AccessLevel.PUBLIC)
 public class APIException extends RuntimeException {
 
-    private int code;
+    private Integer code;
     private String msg;
 
     public APIException(String msg) {
-        this(ResultCode.FAILED.getCode(), msg);
+        this(ResultCodeEnum.FAILED.getCode(), msg);
     }
 
 

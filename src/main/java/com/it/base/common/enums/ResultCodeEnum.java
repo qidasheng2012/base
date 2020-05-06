@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public enum ResultCode {
+public enum ResultCodeEnum {
 
     SUCCESS(200, "操作成功"),
 

@@ -19,7 +19,7 @@ public class User {
     private String account;
 
     @NotNull(message = "用户密码不能为空")
-    @Size(min = 6, max = 11, message = "密码长度必须是6-16个字符")
+    @Size(min = 6, max = 11, message = "密码长度必须是6-11个字符")
     private String password;
 
     @NotNull(message = "用户邮箱不能为空")

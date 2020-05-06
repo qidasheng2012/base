@@ -1,6 +1,6 @@
 package com.it.base.common.vo;
 
-import com.it.base.common.enums.ResultCode;
+import com.it.base.common.enums.ResultCodeEnum;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,12 +16,12 @@ public class ResultVO<T> {
     private T data;
 
     public ResultVO(T data) {
-        this(ResultCode.SUCCESS, data);
+        this(ResultCodeEnum.SUCCESS, data);
     }
 
-    public ResultVO(ResultCode resultCode, T data) {
-        this.code = resultCode.getCode();
-        this.msg = resultCode.getMsg();
+    public ResultVO(ResultCodeEnum resultCodeEnum, T data) {
+        this.code = resultCodeEnum.getCode();
+        this.msg = resultCodeEnum.getMsg();
         this.data = data;
     }
 }
